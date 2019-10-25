@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="proximanova_regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="proximanova_semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EnableLocationView" customModule="Igniter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6G-R2-z9L">
+                    <rect key="frame" x="102.5" y="383.5" width="170" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Soe-IX-L5h"/>
+                        <constraint firstAttribute="width" constant="170" id="rAV-xZ-5kH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <state key="normal" title="Open Settings">
+                        <color key="titleColor" red="0.90986210109999999" green="0.2303439826" blue="0.2484431416" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to Settings &gt; Ello.ie &gt; Location &gt; Enable Location While Using the App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQp-dm-JPx">
+                    <rect key="frame" x="25" y="306.5" width="325" height="37"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To function, Ello.ie requires you to enable your location." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNo-yJ-BOE">
+                    <rect key="frame" x="25" y="249.5" width="325" height="37"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmg-z3-oUx">
+                    <rect key="frame" x="15" y="201" width="345" height="23.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xmg-z3-oUx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="E6L-z0-qay"/>
+                <constraint firstItem="h6G-R2-z9L" firstAttribute="top" secondItem="SQp-dm-JPx" secondAttribute="bottom" constant="40" id="M9Z-qf-9bL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZNo-yJ-BOE" secondAttribute="trailing" constant="25" id="MCy-dj-cpl"/>
+                <constraint firstItem="SQp-dm-JPx" firstAttribute="top" secondItem="ZNo-yJ-BOE" secondAttribute="bottom" constant="20" id="Mtv-c8-Mnk"/>
+                <constraint firstItem="ZNo-yJ-BOE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="Wrr-1g-iRw"/>
+                <constraint firstItem="SQp-dm-JPx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="bAh-b6-WWF"/>
+                <constraint firstItem="ZNo-yJ-BOE" firstAttribute="top" secondItem="xmg-z3-oUx" secondAttribute="bottom" constant="25" id="beC-IF-83f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xmg-z3-oUx" secondAttribute="trailing" constant="15" id="lF1-Ks-1s8"/>
+                <constraint firstItem="h6G-R2-z9L" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="60" id="pwk-t4-e0F"/>
+                <constraint firstItem="h6G-R2-z9L" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="sd5-SC-Ngv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SQp-dm-JPx" secondAttribute="trailing" constant="25" id="uiP-48-wGu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="settingButton" destination="h6G-R2-z9L" id="Bfa-YC-jKN"/>
+            </connections>
+        </view>
+    </objects>
+</document>
